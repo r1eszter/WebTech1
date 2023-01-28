@@ -1,0 +1,65 @@
+.topnav {
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: #DEFFFA ;
+    text-align: center;
+}
+
+.topnav span {
+    float: none;
+    color: #61c2ff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 0.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.topnav span:hover {
+    color: #7234a1;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.aot {
+    height: 450px;
+    width: 750px;
+    border: 5px solid #fde490;
+}
+
+.bnha {
+    height: 700px;
+    width: 450px;
+    border: 5px solid #A0CDED;
+}
+
+.sword {
+    height: 850px;
+    width: 500px;
+    border: 5px solid #F6CACB;
+}
+
+.nar {
+    height: 450px;
+    width: 650px;
+    border: 5px solid #cde761;
+}
+
+td {
+    text-align: center;
+}

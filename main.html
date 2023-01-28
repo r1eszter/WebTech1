@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <!--Load an icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Wonderful Weeb Web</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+
+    body {
+        background-color: #DEFFFA;  
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        text-shadow: 2px 1px 15px #46b3f7;
+        color:  #DEFFFA;
+        font-size: 120px;
+    }
+
+    table, td, th{
+        text-align: center;
+    }
+    </style>
+</head>
+
+
+<script>
+
+    window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+</script>
+
+
+<body>
+    <!--Horizontal Navigation Bar-->
+        <div class="topnav">
+            <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/main.html')">Home</span>
+            <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/anime.html')">Anime</span>
+            <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/manga.html')">Manga</span>
+            <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/challenge.html')">Challenge</span>
+            <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/profile.html')"><i class="fa fa-fw fa-user"></i></span>
+        </div>
+
+
+        <table class="center">
+
+            <tr>
+                <td colspan="2"><h1>Wonderful Weeb Web</h1></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://www.sportskeeda.com/anime/is-attack-titan-anime-ending"> <img class="aot" src="main/aot.png" alt="AOT"> </a>
+                </td>
+                <td>
+                    <a href="https://www.digitalspy.com/tv/a39964369/my-hero-academia-season-6-release-date/"> <img class="bnha" src="main/bnha.png" alt="BNHA"> </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://www.digitalspy.com/tv/a39977569/demon-slayer-season-3-release-date-trailer/"> <img class="sword" src="main/sword.png" alt="Anime swords"> </a>
+                </td>
+                <td>
+                    <a href="https://naruto-official.com/en/news"> <img class="nar" src="main/naruto.png" alt="Naruto"> </a>
+                </td>
+            </tr>
+
+
+        </table>
+
+</body>
+</html>

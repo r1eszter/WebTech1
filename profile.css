@@ -1,0 +1,183 @@
+.userProfile{
+    font-size: 170px;
+    width: 0px;
+}
+
+table {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    border-radius: 12px;
+    border: 5px solid black;
+}
+
+.user {
+    font-size: 40px;
+    background-color: #000;
+    color: white;
+    border-radius: 12px;
+    width: 80%;
+    text-align: center;
+}
+
+.birth {
+    font-size: 20px;
+    text-align: center;
+}
+
+.level {
+    font-size: 30px;
+    text-align: center;
+}
+
+.gen {
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+}
+
+.topnav {
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: #393939 ;
+    text-align: center;
+}
+
+.topnav span {
+    float: none;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 0.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.topnav span:hover {
+    color: #000;
+}
+
+.center {
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.center1 {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.profile-container{
+    width: 50%;
+    margin: auto;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    font-size: 50px;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #BBADA1;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid white;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 12px;
+}
+  
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+  
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

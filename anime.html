@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <!--Load an icon library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Anime</title>
+<link rel="stylesheet" href="anime.css">
+
+<style>
+    body {
+        background-color: #44364B;  
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        text-shadow: 2px 1px 20px #a788d3;
+        color:  #44364B;
+        font-size: 120px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+
+    li {
+        text-align: left;
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+</style>
+
+</head>
+
+
+<script>
+
+    window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1
+})
+
+</script>
+
+
+<body>
+    <!--Horizontal Navigation Bar-->
+    <div class="topnav">
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/main.html')">Home</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/anime.html')">Anime</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/manga.html')">Manga</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/challenge.html')">Challenge</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/profile.html')"><i class="fa fa-fw fa-user"></i></span>
+    </div>
+
+    <table>
+        <tr>
+            <td colspan="2">
+                <h1>Anime Recommendations</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="mid">
+                <div>
+                    <span><img src="anime/HxH.png" /></span>
+                    <span>
+                        <h3>Hunter X Hunter</h3>
+                        <h4>Episodes: 148</h4>  
+                        Hunters devote themselves to accomplishing hazardous tasks, all from traversing the world's uncharted territories to locating rare items and monsters. Before becoming a Hunter, one must pass the Hunter Examination—a high-risk selection process in which most applicants end up handicapped or worse, deceased.
+                        <br>
+                        Ambitious participants who challenge the notorious exam carry their own reason. What drives 12-year-old Gon Freecss is finding Ging, his father and a Hunter himself. Believing that he will meet his father by becoming a Hunter, Gon takes the first step to walk the same path.
+                    </span>
+                </div>
+            </td>
+
+            
+            <td class="side" rowspan="4">
+                <div>
+                <h5>2023 Anime Release Schedule</h5>
+                <ul>
+                    <li>Solo Leveling</li>
+                    <li>Rurouni Kenshin</li>
+                    <li>Attack on Titan <br> (Final Season)</li>
+                    <li>MF Ghost</li>
+                    <li>Classroom of the Elite <br> (Season 3)</li>
+                    <li>Chained Soldier</li>
+                    <li>Ragna Crimson</li>
+                    <li>Undead Unluck</li>
+                    <li>Ultraman <br> (Final Season)</li>
+                    <li>Under Ninja</li>
+                    <li>Tearmoon Empire</li>
+                    <li>Ayaka</li>
+                    <li>Spy x Family <br> (Season 2)</li>
+                    <li>SAND LAND</li>
+                    <li>Bungo Stray Dogs <br> (Season 4)</li>
+                    <li>Spy Classroom</li>
+                    <li>Revenger</li>
+                    <li>JoJo's Bizarre Adventure: Stone Ocean</li>
+                    <li>Ayakashi Triangle</li>
+                    <li>Konosuba: An Explosion on This Wonderful World!</li>
+                    <li>Yuri is My Job!</li>
+                    <li>Mashle</li>
+                    <li>Tomo-chan Is a Girl!</li>
+                </ul>
+            </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="mid">
+                <div>
+                    <span><img src="anime/noragami.png" /></span>
+                    <span>
+                        <h3>Noragami</h3>
+                        <h4>Episodes: 12</h4> 
+                        In times of need, if you look in the right place, you just may see a strange telephone number scrawled in red. If you call this number, you will hear a young man introduce himself as the Yato God.
+                        <br>
+                        Yato is a minor deity and a self-proclaimed "Delivery God," who dreams of having millions of worshippers. Without a single shrine dedicated to his name, however, his goals are far from being realized. He spends his days doing odd jobs for five yen apiece, until his weapon partner becomes fed up with her useless master and deserts him.
+                    </span>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="mid">
+                <div>
+                    <span><img src="anime/onepiece.png" /></span>
+                    <span>
+                        <h3>One Piece</h3>
+                        <h4>Episodes: UNFINISHED</h4> 
+                        Enter Monkey D. Luffy, a 17-year-old boy who defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate ransacking villages for fun, Luffy's reason for being a pirate is one of pure wonder: the thought of an exciting adventure that leads him to intriguing people and ultimately, the promised treasure.
+                        <br>
+                        Gol D. Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line.
+                    </span>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="mid">
+                <div>
+                    <span><img src="anime/jibaku.png" /></span>
+                    <span>
+                        <h3>Jibaku Shounen Hanako-kun</h3>
+                        <h4>Episodes: 12</h4> 
+                        The famous "Seven Wonders" that every school seems to have are a staple of Japanese urban legends. One of the most well-known of these tales is that of Hanako-san: the ghost of a young girl who haunts the school's bathrooms.
+                        <br>
+                        Kamome Academy has its own version of Hanako-san's legend. Rumors claim that if one successfully manages to summon Hanako-san, she will grant her summoner any wish. Lured by the gossip, many people have tried to call upon her, yet every attempt has failed. However, when Nene Yashiro, a girl hoping for romantic fortune, dares to summon Hanako-san, she discovers that the rumored "girl" is actually a boy!
+                    </span>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+
+    
+
+
+</body>
+</html>

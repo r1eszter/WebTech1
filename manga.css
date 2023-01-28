@@ -1,0 +1,68 @@
+.topnav {
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: rgb(76, 76, 76) ;
+    text-align: center;
+}
+
+.topnav span {
+    float: none;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 0.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+  
+.topnav span:hover {
+    color: #000;
+}
+
+table, tr, td {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+div {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #7b7b7b;
+    display: table;
+}
+
+span {
+    vertical-align: middle;
+    text-align: left;
+    display: table-cell;
+}
+
+img {
+    vertical-align: middle;
+    display: table-cell;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    padding-right: 10px;
+}
+
+.side {
+    width: 20%;
+    vertical-align: center;
+    padding-top: 40px;
+    padding-right: 2%;
+}
+
+.mid {
+    width: 70%;
+    padding: 0%;
+    padding-top: 15px;
+}

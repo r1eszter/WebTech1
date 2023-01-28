@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Load an icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+
+    <style>
+        body {
+            background-color: #393939;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Inter", sans-serif;
+            text-shadow: 2px 1px 15px #ffffff;
+            color: #393939;
+            font-size: 120px;
+        }
+
+        p {
+            text-align: center;
+            font-family: "Inter", sans-serif;
+            text-shadow: 2px 1px 15px #ffffff;
+            color: #393939;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myForm');
+    let details;
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+    function savedetails() {
+        console.log("Proba")
+        const radioButtons = document.querySelectorAll('input[name="level"]');
+        let selectedLevel;
+        for (const radioButton of radioButtons) {
+            if (radioButton.checked) {
+                selectedLevel = radioButton.value;
+                break;
+            }
+        }
+        uname = document.getElementById("uname")
+        psw = document.getElementById("psw")
+        g1 = document.getElementById("g1")
+        g2 = document.getElementById("g2")
+        g3 = document.getElementById("g3")
+        g4 = document.getElementById("g4")
+        g5 = document.getElementById("g5")
+        selectedLevel = selectedLevel
+        colorpicker = document.getElementById("colorpicker")
+        birth = document.getElementById("birth")
+
+        details = {
+            uname: uname.value,
+            psw: psw.value,
+            g1: g1,
+            g2: g2,
+            g3: g3,
+            g4: g4,
+            g5: g5,
+            selectedLevel: selectedLevel,
+            colorpicker: colorpicker.value,
+            birth: birth
+        }
+        g = [details.g1, details.g2, details.g3, details.g4, details.g5]
+        for (const element of g) {
+            if (element.checked) {
+                document.getElementById("genres").innerText += " " + element.value
+            }
+        }
+
+
+        document.getElementById("coloredProfile").style.color = details.colorpicker
+        document.getElementById("username").innerText = document.getElementById("username").innerText + details.uname
+        document.getElementById("b").innerText += details.birth.value
+        document.getElementById("level").innerText = document.getElementById("level").innerText + details.selectedLevel
+
+
+        if (details.uname != "" && details.psw != "") 
+        {
+            document.getElementById("login").style.display = "none"
+            document.getElementById("myForm").style.display = "none"
+            document.getElementById("lb").style.display = "none"
+            document.getElementById("logged").style.display = "table"
+        }
+        else{
+            uname.style.borderColor = "red";
+            psw.style.borderColor = "red";
+        }
+    }
+
+    window.transitionToPage = function (href) {
+        document.querySelector('body').style.opacity = 0
+        setTimeout(function () {
+            window.location.href = href
+        }, 500)
+    }
+
+    document.addEventListener('DOMContentLoaded', function (event) {
+        document.querySelector('body').style.opacity = 1
+    })
+
+
+</script>
+
+<body>
+    <!--Horizontal Navigation Bar-->
+    <div class="topnav">
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/main.html')">Home</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/anime.html')">Anime</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/manga.html')">Manga</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/challenge.html')">Challenge</span>
+        <span onclick="transitionToPage('file:///D:/University/WebTech1/NEW/profile.html')"><i
+                class="fa fa-fw fa-user"></i></span>
+    </div>
+
+    <div class="center">
+        <div id="login">
+            <p>Please before you use this web page LOGIN so you can have your own profile.</p>
+        </div>
+    </div>
+
+
+    <table class="profile-container" id="logged" style="display: none;">
+        <tr>
+            <td>
+                <i id="coloredProfile" class="fa fa-fw fa-user userProfile"></i>
+            </td>
+            <td class="user" id="username">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="birth" id="b">
+
+            </td>
+            <td class="level" id="level">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="gen" id="genres">
+
+            </td>
+        </tr>
+        </tabe>
+
+
+        <div class="center1">
+            <button id="lb" onclick="document.getElementById('myForm').style.display='block'"
+                style="width:auto;">Login</button>
+        </div>
+
+
+        <div id="myForm" name="myForm" class="modal">
+
+            <div class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('myForm').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <i alt="Avatar" class="fa fa-fw fa-user"></i>
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+
+                    <br><label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+
+                    <br><label for="chk"><b>Genres you Like</b></label> <br>
+                    <input type="checkbox" id="g1" name="g1" value="Action">
+                    <label for="g1"> Action </label><br>
+                    <input type="checkbox" id="g2" name="g2" value="Adventure">
+                    <label for="g2"> Adventure </label><br>
+                    <input type="checkbox" id="g3" name="g3" value="Fantasy">
+                    <label for="g3"> Fantasy </label><br>
+                    <input type="checkbox" id="g4" name="g4" value="Comedy">
+                    <label for="g4"> Comedy </label><br>
+                    <input type="checkbox" id="g5" name="g5" value="Romance">
+                    <label for="g5"> Romance </label><br>
+
+                    <br><label for="chk"><b>Your LEVEL</b></label> <br>
+                    <input type="radio" id="normie" name="level" value="normie">
+                    <label for="normie">Normie (never heard about animes or mangas)</label><br>
+                    <input type="radio" id="noob" name="level" value="noob">
+                    <label for="noob">Noob (heard about them but just started to read or watch them)</label><br>
+                    <input type="radio" id="weeb" name="level" value="weeb">
+                    <label for="weeb">Weeb (love them and the japan culture a LOT)</label><br>
+                    <input type="radio" id="otaku" name="level" value="otaku">
+                    <label for="otaku">Otaku (love a specific genre and watched a LOT of them)</label><br>
+
+                    <br> <label for="colorpicker"> Color Picker : </label>
+                    <input type="color" id="colorpicker" value="0000ff"> <br>
+
+                    <br> <label for="birth">Your Birth Day : </label> <br>
+                    <input type="date" id="birth" name="birth-day" value="2001-08-23" min="1950-12-31" max="2009-12-31">
+                    <br> <br> <br>
+
+                    <button type="submit" value="Submit" onclick="savedetails()">Login</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+</body>
+
+</html>
